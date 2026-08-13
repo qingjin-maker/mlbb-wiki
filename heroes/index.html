@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>英雄 · 决胜巅峰电竞百科</title>
-<meta name="description" content="英雄定位、技能、出装与克制关系">
+<meta name="description" content="133 位英雄：定位、分路、背景故事">
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="icon" href="../icons/icon.svg">
@@ -12,34 +12,679 @@
 <body>
 <header class="site"><div class="container bar">
   <a class="logo" href="../index.html"><span class="mark">M</span><span>决胜巅峰电竞百科</span></a>
-  <nav class="main"><a href="../index.html">首页</a><a href="../heroes/" class="cur">英雄</a><a href="../players/">选手</a><a href="../teams/">战队</a><a href="../tournaments/">赛事</a><a href="../patches/">版本</a><a href="../glossary/">术语</a></nav>
+  <nav class="main"><a href="../index.html">首页</a><a href="../heroes/" class="cur">英雄</a><a href="../teams/">战队</a><a href="../tournaments/">赛事</a><a href="../regions/">赛区</a><a href="../equips/">装备</a><a href="../emblems/">徽记天赋</a><a href="../battleskills/">战场技能</a><a href="../players/">选手</a><a href="../patches/">版本</a><a href="../glossary/">术语</a></nav>
 </div></header>
 <main class="container">
 
-      <div class="page-head"><h1>英雄</h1><div class="sub">英雄定位、技能、出装与克制关系</div></div>
+      <div class="page-head"><h1>英雄</h1><div class="sub">133 位英雄：定位、分路、背景故事</div></div>
       <input id="q" class="search" type="text" placeholder="搜索英雄…" autocomplete="off">
-      <div class="search-hint" id="hint">共 5 条</div>
-      <div class="entity-grid"><a class="entity-card" data-kw="米娅 Miya 射手 · 难度 简单 强度 T2" href="../heroes/miya/">
-    <div class="t">米娅</div>
-    <div class="e">Miya</div>
-    <div class="meta">射手 · 难度 简单</div>
-    <span class="pill">强度 T2</span></a><a class="entity-card" data-kw="蕾拉 Layla 射手 · 难度 简单 强度 T3" href="../heroes/layla/">
+      <div class="search-hint" id="hint">共 133 条</div>
+      <div class="entity-grid"><a class="entity-card" data-kw="彼良良 Hirara 刺客 · 打野" href="../heroes/hirara/">
+    <div class="thumb"><img loading="lazy" src="../heroes/hirara.png" alt="彼良良"></div>
+    <div class="t">彼良良</div>
+    <div class="e">Hirara</div>
+    <div class="meta">刺客 · 打野</div>
+    </a><a class="entity-card" data-kw="奥利 Aulus 战士 · 打野" href="../heroes/aulus/">
+    <div class="thumb"><img loading="lazy" src="../heroes/aulus.png" alt="奥利"></div>
+    <div class="t">奥利</div>
+    <div class="e">Aulus</div>
+    <div class="meta">战士 · 打野</div>
+    </a><a class="entity-card" data-kw="莫修 Marcel 辅助 · 辅助" href="../heroes/marcel/">
+    <div class="thumb"><img loading="lazy" src="../heroes/marcel.png" alt="莫修"></div>
+    <div class="t">莫修</div>
+    <div class="e">Marcel</div>
+    <div class="meta">辅助 · 辅助</div>
+    </a><a class="entity-card" data-kw="雷朵 Eudora 法师 · 中路" href="../heroes/eudora/">
+    <div class="thumb"><img loading="lazy" src="../heroes/eudora.png" alt="雷朵"></div>
+    <div class="t">雷朵</div>
+    <div class="e">Eudora</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="赛乐 Sora 战士 · 经验路" href="../heroes/sora/">
+    <div class="thumb"><img loading="lazy" src="../heroes/sora.png" alt="赛乐"></div>
+    <div class="t">赛乐</div>
+    <div class="e">Sora</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="厄伊妲 Obsidia 射手 · 金币路" href="../heroes/obsidia/">
+    <div class="thumb"><img loading="lazy" src="../heroes/obsidia.png" alt="厄伊妲"></div>
+    <div class="t">厄伊妲</div>
+    <div class="e">Obsidia</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="武则天 Zetian 法师 · 中路" href="../heroes/zetian/">
+    <div class="thumb"><img loading="lazy" src="../heroes/zetian.png" alt="武则天"></div>
+    <div class="t">武则天</div>
+    <div class="e">Zetian</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="涟涟 Kalea 辅助 · 辅助" href="../heroes/kalea/">
+    <div class="thumb"><img loading="lazy" src="../heroes/kalea.png" alt="涟涟"></div>
+    <div class="t">涟涟</div>
+    <div class="e">Kalea</div>
+    <div class="meta">辅助 · 辅助</div>
+    </a><a class="entity-card" data-kw="卢卡斯 Lukas 战士 · 经验路/打野" href="../heroes/lukas/">
+    <div class="thumb"><img loading="lazy" src="../heroes/lukas.png" alt="卢卡斯"></div>
+    <div class="t">卢卡斯</div>
+    <div class="e">Lukas</div>
+    <div class="meta">战士 · 经验路/打野</div>
+    </a><a class="entity-card" data-kw="肃游 Suyou 刺客 · 打野" href="../heroes/suyou/">
+    <div class="thumb"><img loading="lazy" src="../heroes/suyou.png" alt="肃游"></div>
+    <div class="t">肃游</div>
+    <div class="e">Suyou</div>
+    <div class="meta">刺客 · 打野</div>
+    </a><a class="entity-card" data-kw="烛心 Zhuxin 法师 · 中路" href="../heroes/zhuxin/">
+    <div class="thumb"><img loading="lazy" src="../heroes/zhuxin.png" alt="烛心"></div>
+    <div class="t">烛心</div>
+    <div class="e">Zhuxin</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="薯片 Chip 辅助 · 辅助" href="../heroes/chip/">
+    <div class="thumb"><img loading="lazy" src="../heroes/chip.png" alt="薯片"></div>
+    <div class="t">薯片</div>
+    <div class="e">Chip</div>
+    <div class="meta">辅助 · 辅助</div>
+    </a><a class="entity-card" data-kw="茜茜 Cici 战士 · 经验路" href="../heroes/cici/">
+    <div class="thumb"><img loading="lazy" src="../heroes/cici.png" alt="茜茜"></div>
+    <div class="t">茜茜</div>
+    <div class="e">Cici</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="诺兰 Nolan 刺客 · 打野" href="../heroes/nolan/">
+    <div class="thumb"><img loading="lazy" src="../heroes/nolan.png" alt="诺兰"></div>
+    <div class="t">诺兰</div>
+    <div class="e">Nolan</div>
+    <div class="meta">刺客 · 打野</div>
+    </a><a class="entity-card" data-kw="沙夏 Ixia 射手 · 金币路" href="../heroes/ixia/">
+    <div class="thumb"><img loading="lazy" src="../heroes/ixia.png" alt="沙夏"></div>
+    <div class="t">沙夏</div>
+    <div class="e">Ixia</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="阿洛特 Arlott 战士 · 经验路" href="../heroes/arlott/">
+    <div class="thumb"><img loading="lazy" src="../heroes/arlott.png" alt="阿洛特"></div>
+    <div class="t">阿洛特</div>
+    <div class="e">Arlott</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="诺娃 Novaria 法师 · 中路" href="../heroes/novaria/">
+    <div class="thumb"><img loading="lazy" src="../heroes/novaria.png" alt="诺娃"></div>
+    <div class="t">诺娃</div>
+    <div class="e">Novaria</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="佐儿 Joy 刺客 · 打野" href="../heroes/joy/">
+    <div class="thumb"><img loading="lazy" src="../heroes/joy.png" alt="佐儿"></div>
+    <div class="t">佐儿</div>
+    <div class="e">Joy</div>
+    <div class="meta">刺客 · 打野</div>
+    </a><a class="entity-card" data-kw="费登 Fredrinn 战士 · 打野" href="../heroes/fredrinn/">
+    <div class="thumb"><img loading="lazy" src="../heroes/fredrinn.png" alt="费登"></div>
+    <div class="t">费登</div>
+    <div class="e">Fredrinn</div>
+    <div class="meta">战士 · 打野</div>
+    </a><a class="entity-card" data-kw="游镰 Julian 刺客 · 打野/经验路" href="../heroes/julian/">
+    <div class="thumb"><img loading="lazy" src="../heroes/julian.png" alt="游镰"></div>
+    <div class="t">游镰</div>
+    <div class="e">Julian</div>
+    <div class="meta">刺客 · 打野/经验路</div>
+    </a><a class="entity-card" data-kw="泽文 Xavier 法师 · 中路" href="../heroes/xavier/">
+    <div class="thumb"><img loading="lazy" src="../heroes/xavier.png" alt="泽文"></div>
+    <div class="t">泽文</div>
+    <div class="e">Xavier</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="梅丽莎 Melissa 射手 · 金币路" href="../heroes/melissa/">
+    <div class="thumb"><img loading="lazy" src="../heroes/melissa.png" alt="梅丽莎"></div>
+    <div class="t">梅丽莎</div>
+    <div class="e">Melissa</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="寅 Yin 战士 · 打野/经验路" href="../heroes/yin/">
+    <div class="thumb"><img loading="lazy" src="../heroes/yin.png" alt="寅"></div>
+    <div class="t">寅</div>
+    <div class="e">Yin</div>
+    <div class="meta">战士 · 打野/经验路</div>
+    </a><a class="entity-card" data-kw="洛霖 Floryn 辅助 · 辅助" href="../heroes/floryn/">
+    <div class="thumb"><img loading="lazy" src="../heroes/floryn.png" alt="洛霖"></div>
+    <div class="t">洛霖</div>
+    <div class="e">Floryn</div>
+    <div class="meta">辅助 · 辅助</div>
+    </a><a class="entity-card" data-kw="伊童 Edith 坦克 · 经验路/辅助" href="../heroes/edith/">
+    <div class="thumb"><img loading="lazy" src="../heroes/edith.png" alt="伊童"></div>
+    <div class="t">伊童</div>
+    <div class="e">Edith</div>
+    <div class="meta">坦克 · 经验路/辅助</div>
+    </a><a class="entity-card" data-kw="瓦伦蒂娜 Valentina 法师 · 中路" href="../heroes/valentina/">
+    <div class="thumb"><img loading="lazy" src="../heroes/valentina.png" alt="瓦伦蒂娜"></div>
+    <div class="t">瓦伦蒂娜</div>
+    <div class="e">Valentina</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="亚蒙 Aamon 刺客 · 打野" href="../heroes/aamon/">
+    <div class="thumb"><img loading="lazy" src="../heroes/aamon.png" alt="亚蒙"></div>
+    <div class="t">亚蒙</div>
+    <div class="e">Aamon</div>
+    <div class="meta">刺客 · 打野</div>
+    </a><a class="entity-card" data-kw="纽特 Natan 射手 · 金币路" href="../heroes/natan/">
+    <div class="thumb"><img loading="lazy" src="../heroes/natan.png" alt="纽特"></div>
+    <div class="t">纽特</div>
+    <div class="e">Natan</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="赫洛斯 Phoveus 战士 · 经验路" href="../heroes/phoveus/">
+    <div class="thumb"><img loading="lazy" src="../heroes/phoveus.png" alt="赫洛斯"></div>
+    <div class="t">赫洛斯</div>
+    <div class="e">Phoveus</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="布迪卡 Beatrix 射手 · 金币路" href="../heroes/beatrix/">
+    <div class="thumb"><img loading="lazy" src="../heroes/beatrix.png" alt="布迪卡"></div>
+    <div class="t">布迪卡</div>
+    <div class="e">Beatrix</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="鬼隆隆 Gloo 坦克 · 辅助/经验路" href="../heroes/gloo/">
+    <div class="thumb"><img loading="lazy" src="../heroes/gloo.png" alt="鬼隆隆"></div>
+    <div class="t">鬼隆隆</div>
+    <div class="e">Gloo</div>
+    <div class="meta">坦克 · 辅助/经验路</div>
+    </a><a class="entity-card" data-kw="帕奎特 Paquito 战士 · 经验路" href="../heroes/paquito/">
+    <div class="thumb"><img loading="lazy" src="../heroes/paquito.png" alt="帕奎特"></div>
+    <div class="t">帕奎特</div>
+    <div class="e">Paquito</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="飞羽 Mathilda 辅助 · 辅助" href="../heroes/mathilda/">
+    <div class="thumb"><img loading="lazy" src="../heroes/mathilda.png" alt="飞羽"></div>
+    <div class="t">飞羽</div>
+    <div class="e">Mathilda</div>
+    <div class="meta">辅助 · 辅助</div>
+    </a><a class="entity-card" data-kw="伊赫 Yve 法师 · 中路" href="../heroes/yve/">
+    <div class="thumb"><img loading="lazy" src="../heroes/yve.png" alt="伊赫"></div>
+    <div class="t">伊赫</div>
+    <div class="e">Yve</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="郁 Brody 射手 · 金币路" href="../heroes/brody/">
+    <div class="thumb"><img loading="lazy" src="../heroes/brody.png" alt="郁"></div>
+    <div class="t">郁</div>
+    <div class="e">Brody</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="巴特兹 Barats 坦克 · 打野" href="../heroes/barats/">
+    <div class="thumb"><img loading="lazy" src="../heroes/barats.png" alt="巴特兹"></div>
+    <div class="t">巴特兹</div>
+    <div class="e">Barats</div>
+    <div class="meta">坦克 · 打野</div>
+    </a><a class="entity-card" data-kw="卡里德 Khaleed 战士 · 辅助/经验路" href="../heroes/khaleed/">
+    <div class="thumb"><img loading="lazy" src="../heroes/khaleed.png" alt="卡里德"></div>
+    <div class="t">卡里德</div>
+    <div class="e">Khaleed</div>
+    <div class="meta">战士 · 辅助/经验路</div>
+    </a><a class="entity-card" data-kw="贝拉 Benedetta 刺客 · 经验路" href="../heroes/benedetta/">
+    <div class="thumb"><img loading="lazy" src="../heroes/benedetta.png" alt="贝拉"></div>
+    <div class="t">贝拉</div>
+    <div class="e">Benedetta</div>
+    <div class="meta">刺客 · 经验路</div>
+    </a><a class="entity-card" data-kw="珞翊 Luo Yi 法师 · 中路" href="../heroes/luo-yi/">
+    <div class="thumb"><img loading="lazy" src="../heroes/luo-yi.png" alt="珞翊"></div>
+    <div class="t">珞翊</div>
+    <div class="e">Luo Yi</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="翀 Yu Zhong 战士 · 经验路" href="../heroes/yu-zhong/">
+    <div class="thumb"><img loading="lazy" src="../heroes/yu-zhong.png" alt="翀"></div>
+    <div class="t">翀</div>
+    <div class="e">Yu Zhong</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="波波鲁与库巴 Popol and Kupa 射手 · 打野/金币路" href="../heroes/popol-and-kupa/">
+    <div class="thumb"><img loading="lazy" src="../heroes/popol-and-kupa.png" alt="波波鲁与库巴"></div>
+    <div class="t">波波鲁与库巴</div>
+    <div class="e">Popol and Kupa</div>
+    <div class="meta">射手 · 打野/金币路</div>
+    </a><a class="entity-card" data-kw="阿特拉斯 Atlas 坦克 · 辅助" href="../heroes/atlas/">
+    <div class="thumb"><img loading="lazy" src="../heroes/atlas.png" alt="阿特拉斯"></div>
+    <div class="t">阿特拉斯</div>
+    <div class="e">Atlas</div>
+    <div class="meta">坦克 · 辅助</div>
+    </a><a class="entity-card" data-kw="璃 Carmilla 辅助 · 辅助" href="../heroes/carmilla/">
+    <div class="thumb"><img loading="lazy" src="../heroes/carmilla.png" alt="璃"></div>
+    <div class="t">璃</div>
+    <div class="e">Carmilla</div>
+    <div class="meta">辅助 · 辅助</div>
+    </a><a class="entity-card" data-kw="琉 Cecilion 法师 · 中路" href="../heroes/cecilion/">
+    <div class="thumb"><img loading="lazy" src="../heroes/cecilion.png" alt="琉"></div>
+    <div class="t">琉</div>
+    <div class="e">Cecilion</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="希雅 Silvanna 战士 · 经验路" href="../heroes/silvanna/">
+    <div class="thumb"><img loading="lazy" src="../heroes/silvanna.png" alt="希雅"></div>
+    <div class="t">希雅</div>
+    <div class="e">Silvanna</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="唐绾绾 Wanwan 射手 · 金币路" href="../heroes/wanwan/">
+    <div class="thumb"><img loading="lazy" src="../heroes/wanwan.png" alt="唐绾绾"></div>
+    <div class="t">唐绾绾</div>
+    <div class="e">Wanwan</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="玛莎 Masha 战士 · 经验路" href="../heroes/masha/">
+    <div class="thumb"><img loading="lazy" src="../heroes/masha.png" alt="玛莎"></div>
+    <div class="t">玛莎</div>
+    <div class="e">Masha</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="霸下 Baxia 坦克 · 打野/辅助" href="../heroes/baxia/">
+    <div class="thumb"><img loading="lazy" src="../heroes/baxia.png" alt="霸下"></div>
+    <div class="t">霸下</div>
+    <div class="e">Baxia</div>
+    <div class="meta">坦克 · 打野/辅助</div>
+    </a><a class="entity-card" data-kw="莉莉娅 Lylia 法师 · 中路" href="../heroes/lylia/">
+    <div class="thumb"><img loading="lazy" src="../heroes/lylia.png" alt="莉莉娅"></div>
+    <div class="t">莉莉娅</div>
+    <div class="e">Lylia</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="狄牙 Dyrroth 战士 · 经验路/打野" href="../heroes/dyrroth/">
+    <div class="thumb"><img loading="lazy" src="../heroes/dyrroth.png" alt="狄牙"></div>
+    <div class="t">狄牙</div>
+    <div class="e">Dyrroth</div>
+    <div class="meta">战士 · 经验路/打野</div>
+    </a><a class="entity-card" data-kw="翎 Ling 刺客 · 打野" href="../heroes/ling/">
+    <div class="thumb"><img loading="lazy" src="../heroes/ling.png" alt="翎"></div>
+    <div class="t">翎</div>
+    <div class="e">Ling</div>
+    <div class="meta">刺客 · 打野</div>
+    </a><a class="entity-card" data-kw="X X.Borg 战士 · 经验路" href="../heroes/x-borg/">
+    <div class="thumb"><img loading="lazy" src="../heroes/x-borg.png" alt="X"></div>
+    <div class="t">X</div>
+    <div class="e">X.Borg</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="狄斯拉 Terizla 战士 · 经验路" href="../heroes/terizla/">
+    <div class="thumb"><img loading="lazy" src="../heroes/terizla.png" alt="狄斯拉"></div>
+    <div class="t">狄斯拉</div>
+    <div class="e">Terizla</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="艾美 Esmeralda 坦克 · 经验路" href="../heroes/esmeralda/">
+    <div class="thumb"><img loading="lazy" src="../heroes/esmeralda.png" alt="艾美"></div>
+    <div class="t">艾美</div>
+    <div class="e">Esmeralda</div>
+    <div class="meta">坦克 · 经验路</div>
+    </a><a class="entity-card" data-kw="桂妮薇儿 Guinevere 战士 · 经验路" href="../heroes/guinevere/">
+    <div class="thumb"><img loading="lazy" src="../heroes/guinevere.png" alt="桂妮薇儿"></div>
+    <div class="t">桂妮薇儿</div>
+    <div class="e">Guinevere</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="格兰杰 Granger 射手 · 金币路" href="../heroes/granger/">
+    <div class="thumb"><img loading="lazy" src="../heroes/granger.png" alt="格兰杰"></div>
+    <div class="t">格兰杰</div>
+    <div class="e">Granger</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="库夫拉 Khufra 坦克 · 辅助" href="../heroes/khufra/">
+    <div class="thumb"><img loading="lazy" src="../heroes/khufra.png" alt="库夫拉"></div>
+    <div class="t">库夫拉</div>
+    <div class="e">Khufra</div>
+    <div class="meta">坦克 · 辅助</div>
+    </a><a class="entity-card" data-kw="巴当 Badang 战士 · 辅助/经验路" href="../heroes/badang/">
+    <div class="thumb"><img loading="lazy" src="../heroes/badang.png" alt="巴当"></div>
+    <div class="t">巴当</div>
+    <div class="e">Badang</div>
+    <div class="meta">战士 · 辅助/经验路</div>
+    </a><a class="entity-card" data-kw="法冥 Faramis 辅助 · 中路/辅助" href="../heroes/faramis/">
+    <div class="thumb"><img loading="lazy" src="../heroes/faramis.png" alt="法冥"></div>
+    <div class="t">法冥</div>
+    <div class="e">Faramis</div>
+    <div class="meta">辅助 · 中路/辅助</div>
+    </a><a class="entity-card" data-kw="卡蒂塔 Kadita 法师 · 中路" href="../heroes/kadita/">
+    <div class="thumb"><img loading="lazy" src="../heroes/kadita.png" alt="卡蒂塔"></div>
+    <div class="t">卡蒂塔</div>
+    <div class="e">Kadita</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="麦西塔尔 Minsitthar 战士 · 经验路/辅助" href="../heroes/minsitthar/">
+    <div class="thumb"><img loading="lazy" src="../heroes/minsitthar.png" alt="麦西塔尔"></div>
+    <div class="t">麦西塔尔</div>
+    <div class="e">Minsitthar</div>
+    <div class="meta">战士 · 经验路/辅助</div>
+    </a><a class="entity-card" data-kw="哈里斯 Harith 法师 · 金币路/打野" href="../heroes/harith/">
+    <div class="thumb"><img loading="lazy" src="../heroes/harith.png" alt="哈里斯"></div>
+    <div class="t">哈里斯</div>
+    <div class="e">Harith</div>
+    <div class="meta">法师 · 金币路/打野</div>
+    </a><a class="entity-card" data-kw="炎煞 Thamuz 战士 · 经验路" href="../heroes/thamuz/">
+    <div class="thumb"><img loading="lazy" src="../heroes/thamuz.png" alt="炎煞"></div>
+    <div class="t">炎煞</div>
+    <div class="e">Thamuz</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="吉米 Kimmy 射手 · 中路/金币路" href="../heroes/kimmy/">
+    <div class="thumb"><img loading="lazy" src="../heroes/kimmy.png" alt="吉米"></div>
+    <div class="t">吉米</div>
+    <div class="e">Kimmy</div>
+    <div class="meta">射手 · 中路/金币路</div>
+    </a><a class="entity-card" data-kw="古树 Belerick 坦克 · 辅助" href="../heroes/belerick/">
+    <div class="thumb"><img loading="lazy" src="../heroes/belerick.png" alt="古树"></div>
+    <div class="t">古树</div>
+    <div class="e">Belerick</div>
+    <div class="meta">坦克 · 辅助</div>
+    </a><a class="entity-card" data-kw="半藏 Hanzo 刺客 · 打野" href="../heroes/hanzo/">
+    <div class="thumb"><img loading="lazy" src="../heroes/hanzo.png" alt="半藏"></div>
+    <div class="t">半藏</div>
+    <div class="e">Hanzo</div>
+    <div class="meta">刺客 · 打野</div>
+    </a><a class="entity-card" data-kw="星梦 Lunox 法师 · 中路" href="../heroes/lunox/">
+    <div class="thumb"><img loading="lazy" src="../heroes/lunox.png" alt="星梦"></div>
+    <div class="t">星梦</div>
+    <div class="e">Lunox</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="雷蒙 Leomord 战士 · 打野" href="../heroes/leomord/">
+    <div class="thumb"><img loading="lazy" src="../heroes/leomord.png" alt="雷蒙"></div>
+    <div class="t">雷蒙</div>
+    <div class="e">Leomord</div>
+    <div class="meta">战士 · 打野</div>
+    </a><a class="entity-card" data-kw="维尔 Vale 法师 · 中路" href="../heroes/vale/">
+    <div class="thumb"><img loading="lazy" src="../heroes/vale.png" alt="维尔"></div>
+    <div class="t">维尔</div>
+    <div class="e">Vale</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="克劳德 Claude 射手 · 金币路" href="../heroes/claude/">
+    <div class="thumb"><img loading="lazy" src="../heroes/claude.png" alt="克劳德"></div>
+    <div class="t">克劳德</div>
+    <div class="e">Claude</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="毅拳 Aldous 战士 · 经验路" href="../heroes/aldous/">
+    <div class="thumb"><img loading="lazy" src="../heroes/aldous.png" alt="毅拳"></div>
+    <div class="t">毅拳</div>
+    <div class="e">Aldous</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="赛琳娜 Selena 刺客 · 中路/辅助" href="../heroes/selena/">
+    <div class="thumb"><img loading="lazy" src="../heroes/selena.png" alt="赛琳娜"></div>
+    <div class="t">赛琳娜</div>
+    <div class="e">Selena</div>
+    <div class="meta">刺客 · 中路/辅助</div>
+    </a><a class="entity-card" data-kw="卡伽 Kaja 辅助 · 辅助" href="../heroes/kaja/">
+    <div class="thumb"><img loading="lazy" src="../heroes/kaja.png" alt="卡伽"></div>
+    <div class="t">卡伽</div>
+    <div class="e">Kaja</div>
+    <div class="meta">辅助 · 辅助</div>
+    </a><a class="entity-card" data-kw="嫦娥 Chang'e 法师 · 中路" href="../heroes/chang-e/">
+    <div class="thumb"><img loading="lazy" src="../heroes/chang-e.png" alt="嫦娥"></div>
+    <div class="t">嫦娥</div>
+    <div class="e">Chang'e</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="花火 Hanabi 射手 · 金币路" href="../heroes/hanabi/">
+    <div class="thumb"><img loading="lazy" src="../heroes/hanabi.png" alt="花火"></div>
+    <div class="t">花火</div>
+    <div class="e">Hanabi</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="天卫 Uranus 坦克 · 经验路" href="../heroes/uranus/">
+    <div class="thumb"><img loading="lazy" src="../heroes/uranus.png" alt="天卫"></div>
+    <div class="t">天卫</div>
+    <div class="e">Uranus</div>
+    <div class="meta">坦克 · 经验路</div>
+    </a><a class="entity-card" data-kw="阿修罗 Martis 战士 · 打野/经验路" href="../heroes/martis/">
+    <div class="thumb"><img loading="lazy" src="../heroes/martis.png" alt="阿修罗"></div>
+    <div class="t">阿修罗</div>
+    <div class="e">Martis</div>
+    <div class="meta">战士 · 打野/经验路</div>
+    </a><a class="entity-card" data-kw="烈尔 Valir 法师 · 中路" href="../heroes/valir/">
+    <div class="thumb"><img loading="lazy" src="../heroes/valir.png" alt="烈尔"></div>
+    <div class="t">烈尔</div>
+    <div class="e">Valir</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="古辛 Gusion 刺客 · 打野/中路" href="../heroes/gusion/">
+    <div class="thumb"><img loading="lazy" src="../heroes/gusion.png" alt="古辛"></div>
+    <div class="t">古辛</div>
+    <div class="e">Gusion</div>
+    <div class="meta">刺客 · 打野/中路</div>
+    </a><a class="entity-card" data-kw="安卓儿 Angela 辅助 · 辅助" href="../heroes/angela/">
+    <div class="thumb"><img loading="lazy" src="../heroes/angela.png" alt="安卓儿"></div>
+    <div class="t">安卓儿</div>
+    <div class="e">Angela</div>
+    <div class="meta">辅助 · 辅助</div>
+    </a><a class="entity-card" data-kw="大铁罐 Jawhead 战士 · 辅助/经验路" href="../heroes/jawhead/">
+    <div class="thumb"><img loading="lazy" src="../heroes/jawhead.png" alt="大铁罐"></div>
+    <div class="t">大铁罐</div>
+    <div class="e">Jawhead</div>
+    <div class="meta">战士 · 辅助/经验路</div>
+    </a><a class="entity-card" data-kw="莱斯丽 Lesley 射手 · 金币路" href="../heroes/lesley/">
+    <div class="thumb"><img loading="lazy" src="../heroes/lesley.png" alt="莱斯丽"></div>
+    <div class="t">莱斯丽</div>
+    <div class="e">Lesley</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="法莎 Pharsa 法师 · 中路" href="../heroes/pharsa/">
+    <div class="thumb"><img loading="lazy" src="../heroes/pharsa.png" alt="法莎"></div>
+    <div class="t">法莎</div>
+    <div class="e">Pharsa</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="哈卡特 Helcurt 刺客 · 打野/辅助" href="../heroes/helcurt/">
+    <div class="thumb"><img loading="lazy" src="../heroes/helcurt.png" alt="哈卡特"></div>
+    <div class="t">哈卡特</div>
+    <div class="e">Helcurt</div>
+    <div class="meta">刺客 · 打野/辅助</div>
+    </a><a class="entity-card" data-kw="扎斯克 Zhask 法师 · 中路" href="../heroes/zhask/">
+    <div class="thumb"><img loading="lazy" src="../heroes/zhask.png" alt="扎斯克"></div>
+    <div class="t">扎斯克</div>
+    <div class="e">Zhask</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="洛驰 Hylos 坦克 · 辅助" href="../heroes/hylos/">
+    <div class="thumb"><img loading="lazy" src="../heroes/hylos.png" alt="洛驰"></div>
+    <div class="t">洛驰</div>
+    <div class="e">Hylos</div>
+    <div class="meta">坦克 · 辅助</div>
+    </a><a class="entity-card" data-kw="掘掘 Diggie 辅助 · 辅助" href="../heroes/diggie/">
+    <div class="thumb"><img loading="lazy" src="../heroes/diggie.png" alt="掘掘"></div>
+    <div class="t">掘掘</div>
+    <div class="e">Diggie</div>
+    <div class="meta">辅助 · 辅助</div>
+    </a><a class="entity-card" data-kw="兰斯洛特 Lancelot 刺客 · 打野" href="../heroes/lancelot/">
+    <div class="thumb"><img loading="lazy" src="../heroes/lancelot.png" alt="兰斯洛特"></div>
+    <div class="t">兰斯洛特</div>
+    <div class="e">Lancelot</div>
+    <div class="meta">刺客 · 打野</div>
+    </a><a class="entity-card" data-kw="奥黛塔 Odette 法师 · 中路" href="../heroes/odette/">
+    <div class="thumb"><img loading="lazy" src="../heroes/odette.png" alt="奥黛塔"></div>
+    <div class="t">奥黛塔</div>
+    <div class="e">Odette</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="路西法 Argus 战士 · 经验路" href="../heroes/argus/">
+    <div class="thumb"><img loading="lazy" src="../heroes/argus.png" alt="路西法"></div>
+    <div class="t">路西法</div>
+    <div class="e">Argus</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="格瑞克 Grock 坦克 · 辅助" href="../heroes/grock/">
+    <div class="thumb"><img loading="lazy" src="../heroes/grock.png" alt="格瑞克"></div>
+    <div class="t">格瑞克</div>
+    <div class="e">Grock</div>
+    <div class="meta">坦克 · 辅助</div>
+    </a><a class="entity-card" data-kw="黎希尔 Irithel 射手 · 金币路" href="../heroes/irithel/">
+    <div class="thumb"><img loading="lazy" src="../heroes/irithel.png" alt="黎希尔"></div>
+    <div class="t">黎希尔</div>
+    <div class="e">Irithel</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="哈利 Harley 刺客 · 打野/中路" href="../heroes/harley/">
+    <div class="thumb"><img loading="lazy" src="../heroes/harley.png" alt="哈利"></div>
+    <div class="t">哈利</div>
+    <div class="e">Harley</div>
+    <div class="meta">刺客 · 打野/中路</div>
+    </a><a class="entity-card" data-kw="金迦 Gatotkaca 坦克 · 辅助/经验路" href="../heroes/gatotkaca/">
+    <div class="thumb"><img loading="lazy" src="../heroes/gatotkaca.png" alt="金迦"></div>
+    <div class="t">金迦</div>
+    <div class="e">Gatotkaca</div>
+    <div class="meta">坦克 · 辅助/经验路</div>
+    </a><a class="entity-card" data-kw="凯丽 Karrie 射手 · 金币路" href="../heroes/karrie/">
+    <div class="thumb"><img loading="lazy" src="../heroes/karrie.png" alt="凯丽"></div>
+    <div class="t">凯丽</div>
+    <div class="e">Karrie</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="罗杰 Roger 战士 · 打野" href="../heroes/roger/">
+    <div class="thumb"><img loading="lazy" src="../heroes/roger.png" alt="罗杰"></div>
+    <div class="t">罗杰</div>
+    <div class="e">Roger</div>
+    <div class="meta">战士 · 打野</div>
+    </a><a class="entity-card" data-kw="幽娜 Vexana 法师 · 中路" href="../heroes/vexana/">
+    <div class="thumb"><img loading="lazy" src="../heroes/vexana.png" alt="幽娜"></div>
+    <div class="t">幽娜</div>
+    <div class="e">Vexana</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="拉普 Lapu-Lapu 战士 · 经验路" href="../heroes/lapu-lapu/">
+    <div class="thumb"><img loading="lazy" src="../heroes/lapu-lapu.png" alt="拉普"></div>
+    <div class="t">拉普</div>
+    <div class="e">Lapu-Lapu</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="欧若拉 Aurora 法师 · 中路" href="../heroes/aurora/">
+    <div class="thumb"><img loading="lazy" src="../heroes/aurora.png" alt="欧若拉"></div>
+    <div class="t">欧若拉</div>
+    <div class="e">Aurora</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="希尔达 Hilda 战士 · 辅助/经验路" href="../heroes/hilda/">
+    <div class="thumb"><img loading="lazy" src="../heroes/hilda.png" alt="希尔达"></div>
+    <div class="t">希尔达</div>
+    <div class="e">Hilda</div>
+    <div class="meta">战士 · 辅助/经验路</div>
+    </a><a class="entity-card" data-kw="月司 Estes 辅助 · 辅助" href="../heroes/estes/">
+    <div class="thumb"><img loading="lazy" src="../heroes/estes.png" alt="月司"></div>
+    <div class="t">月司</div>
+    <div class="e">Estes</div>
+    <div class="meta">辅助 · 辅助</div>
+    </a><a class="entity-card" data-kw="齐乐乐 Cyclops 法师 · 中路" href="../heroes/cyclops/">
+    <div class="thumb"><img loading="lazy" src="../heroes/cyclops.png" alt="齐乐乐"></div>
+    <div class="t">齐乐乐</div>
+    <div class="e">Cyclops</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="强森 Johnson 坦克 · 辅助" href="../heroes/johnson/">
+    <div class="thumb"><img loading="lazy" src="../heroes/johnson.png" alt="强森"></div>
+    <div class="t">强森</div>
+    <div class="e">Johnson</div>
+    <div class="meta">坦克 · 辅助</div>
+    </a><a class="entity-card" data-kw="魔刹 Moskov 射手 · 金币路" href="../heroes/moskov/">
+    <div class="thumb"><img loading="lazy" src="../heroes/moskov.png" alt="魔刹"></div>
+    <div class="t">魔刹</div>
+    <div class="e">Moskov</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="旭臣 Yi Sun-shin 刺客 · 打野" href="../heroes/yi-sun-shin/">
+    <div class="thumb"><img loading="lazy" src="../heroes/yi-sun-shin.png" alt="旭臣"></div>
+    <div class="t">旭臣</div>
+    <div class="e">Yi Sun-shin</div>
+    <div class="meta">刺客 · 打野</div>
+    </a><a class="entity-card" data-kw="露比 Ruby 战士 · 经验路" href="../heroes/ruby/">
+    <div class="thumb"><img loading="lazy" src="../heroes/ruby.png" alt="露比"></div>
+    <div class="t">露比</div>
+    <div class="e">Ruby</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="阿尔法 Alpha 战士 · 打野/经验路" href="../heroes/alpha/">
+    <div class="thumb"><img loading="lazy" src="../heroes/alpha.png" alt="阿尔法"></div>
+    <div class="t">阿尔法</div>
+    <div class="e">Alpha</div>
+    <div class="meta">战士 · 打野/经验路</div>
+    </a><a class="entity-card" data-kw="悟空 Sun 战士 · 经验路/打野" href="../heroes/sun/">
+    <div class="thumb"><img loading="lazy" src="../heroes/sun.png" alt="悟空"></div>
+    <div class="t">悟空</div>
+    <div class="e">Sun</div>
+    <div class="meta">战士 · 经验路/打野</div>
+    </a><a class="entity-card" data-kw="周 Chou 战士 · 经验路/辅助" href="../heroes/chou/">
+    <div class="thumb"><img loading="lazy" src="../heroes/chou.png" alt="周"></div>
+    <div class="t">周</div>
+    <div class="e">Chou</div>
+    <div class="meta">战士 · 经验路/辅助</div>
+    </a><a class="entity-card" data-kw="神乐 Kagura 法师 · 中路" href="../heroes/kagura/">
+    <div class="thumb"><img loading="lazy" src="../heroes/kagura.png" alt="神乐"></div>
+    <div class="t">神乐</div>
+    <div class="e">Kagura</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="娜塔莉 Natalia 刺客 · 打野/辅助" href="../heroes/natalia/">
+    <div class="thumb"><img loading="lazy" src="../heroes/natalia.png" alt="娜塔莉"></div>
+    <div class="t">娜塔莉</div>
+    <div class="e">Natalia</div>
+    <div class="meta">刺客 · 打野/辅助</div>
+    </a><a class="entity-card" data-kw="古德 Gord 法师 · 中路" href="../heroes/gord/">
+    <div class="thumb"><img loading="lazy" src="../heroes/gord.png" alt="古德"></div>
+    <div class="t">古德</div>
+    <div class="e">Gord</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="芙蕾雅 Freya 战士 · 经验路/打野" href="../heroes/freya/">
+    <div class="thumb"><img loading="lazy" src="../heroes/freya.png" alt="芙蕾雅"></div>
+    <div class="t">芙蕾雅</div>
+    <div class="e">Freya</div>
+    <div class="meta">战士 · 经验路/打野</div>
+    </a><a class="entity-card" data-kw="隼 Hayabusa 刺客 · 打野" href="../heroes/hayabusa/">
+    <div class="thumb"><img loading="lazy" src="../heroes/hayabusa.png" alt="隼"></div>
+    <div class="t">隼</div>
+    <div class="e">Hayabusa</div>
+    <div class="meta">刺客 · 打野</div>
+    </a><a class="entity-card" data-kw="洛丽塔 Lolita 辅助 · 辅助" href="../heroes/lolita/">
+    <div class="thumb"><img loading="lazy" src="../heroes/lolita.png" alt="洛丽塔"></div>
+    <div class="t">洛丽塔</div>
+    <div class="e">Lolita</div>
+    <div class="meta">辅助 · 辅助</div>
+    </a><a class="entity-card" data-kw="蛮牛 Minotaur 坦克 · 辅助" href="../heroes/minotaur/">
+    <div class="thumb"><img loading="lazy" src="../heroes/minotaur.png" alt="蛮牛"></div>
+    <div class="t">蛮牛</div>
+    <div class="e">Minotaur</div>
+    <div class="meta">坦克 · 辅助</div>
+    </a><a class="entity-card" data-kw="蕾拉 Layla 射手 · 金币路" href="../heroes/layla/">
+    <div class="thumb"><img loading="lazy" src="../heroes/layla.png" alt="蕾拉"></div>
     <div class="t">蕾拉</div>
     <div class="e">Layla</div>
-    <div class="meta">射手 · 难度 简单</div>
-    <span class="pill">强度 T3</span></a><a class="entity-card" data-kw="法妮 Fanny 刺客 · 难度 困难 强度 T1" href="../heroes/fanny/">
-    <div class="t">法妮</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="梵妮 Fanny 刺客 · 打野" href="../heroes/fanny/">
+    <div class="thumb"><img loading="lazy" src="../heroes/fanny.png" alt="梵妮"></div>
+    <div class="t">梵妮</div>
     <div class="e">Fanny</div>
-    <div class="meta">刺客 · 难度 困难</div>
-    <span class="pill">强度 T1</span></a><a class="entity-card" data-kw="古斯 Gusion 刺客 · 难度 困难 强度 T1" href="../heroes/gusion/">
-    <div class="t">古斯</div>
-    <div class="e">Gusion</div>
-    <div class="meta">刺客 · 难度 困难</div>
-    <span class="pill">强度 T1</span></a><a class="entity-card" data-kw="蒂格雷尔 Tigreal 坦克 · 难度 简单 强度 T2" href="../heroes/tigreal/">
-    <div class="t">蒂格雷尔</div>
+    <div class="meta">刺客 · 打野</div>
+    </a><a class="entity-card" data-kw="子龙 Zilong 战士 · 经验路" href="../heroes/zilong/">
+    <div class="thumb"><img loading="lazy" src="../heroes/zilong.png" alt="子龙"></div>
+    <div class="t">子龙</div>
+    <div class="e">Zilong</div>
+    <div class="meta">战士 · 经验路</div>
+    </a><a class="entity-card" data-kw="拉菲尔 Rafaela 辅助 · 辅助" href="../heroes/rafaela/">
+    <div class="thumb"><img loading="lazy" src="../heroes/rafaela.png" alt="拉菲尔"></div>
+    <div class="t">拉菲尔</div>
+    <div class="e">Rafaela</div>
+    <div class="meta">辅助 · 辅助</div>
+    </a><a class="entity-card" data-kw="克林特 Clint 射手 · 金币路" href="../heroes/clint/">
+    <div class="thumb"><img loading="lazy" src="../heroes/clint.png" alt="克林特"></div>
+    <div class="t">克林特</div>
+    <div class="e">Clint</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="前锋 Bruno 射手 · 金币路" href="../heroes/bruno/">
+    <div class="thumb"><img loading="lazy" src="../heroes/bruno.png" alt="前锋"></div>
+    <div class="t">前锋</div>
+    <div class="e">Bruno</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="贝恩 Bane 战士 · 打野/经验路" href="../heroes/bane/">
+    <div class="thumb"><img loading="lazy" src="../heroes/bane.png" alt="贝恩"></div>
+    <div class="t">贝恩</div>
+    <div class="e">Bane</div>
+    <div class="meta">战士 · 打野/经验路</div>
+    </a><a class="entity-card" data-kw="弗朗哥 Franco 坦克 · 辅助" href="../heroes/franco/">
+    <div class="thumb"><img loading="lazy" src="../heroes/franco.png" alt="弗朗哥"></div>
+    <div class="t">弗朗哥</div>
+    <div class="e">Franco</div>
+    <div class="meta">坦克 · 辅助</div>
+    </a><a class="entity-card" data-kw="阿凯 Akai 坦克 · 辅助" href="../heroes/akai/">
+    <div class="thumb"><img loading="lazy" src="../heroes/akai.png" alt="阿凯"></div>
+    <div class="t">阿凯</div>
+    <div class="e">Akai</div>
+    <div class="meta">坦克 · 辅助</div>
+    </a><a class="entity-card" data-kw="卡琳娜 Karina 刺客 · 打野" href="../heroes/karina/">
+    <div class="thumb"><img loading="lazy" src="../heroes/karina.png" alt="卡琳娜"></div>
+    <div class="t">卡琳娜</div>
+    <div class="e">Karina</div>
+    <div class="meta">刺客 · 打野</div>
+    </a><a class="entity-card" data-kw="阿鲁卡 Alucard 战士 · 打野" href="../heroes/alucard/">
+    <div class="thumb"><img loading="lazy" src="../heroes/alucard.png" alt="阿鲁卡"></div>
+    <div class="t">阿鲁卡</div>
+    <div class="e">Alucard</div>
+    <div class="meta">战士 · 打野</div>
+    </a><a class="entity-card" data-kw="泰格 Tigreal 坦克 · 辅助" href="../heroes/tigreal/">
+    <div class="thumb"><img loading="lazy" src="../heroes/tigreal.png" alt="泰格"></div>
+    <div class="t">泰格</div>
     <div class="e">Tigreal</div>
-    <div class="meta">坦克 · 难度 简单</div>
-    <span class="pill">强度 T2</span></a></div>
+    <div class="meta">坦克 · 辅助</div>
+    </a><a class="entity-card" data-kw="娜娜 Nana 法师 · 中路" href="../heroes/nana/">
+    <div class="thumb"><img loading="lazy" src="../heroes/nana.png" alt="娜娜"></div>
+    <div class="t">娜娜</div>
+    <div class="e">Nana</div>
+    <div class="meta">法师 · 中路</div>
+    </a><a class="entity-card" data-kw="艾莉丝 Alice 坦克 · 经验路/打野" href="../heroes/alice/">
+    <div class="thumb"><img loading="lazy" src="../heroes/alice.png" alt="艾莉丝"></div>
+    <div class="t">艾莉丝</div>
+    <div class="e">Alice</div>
+    <div class="meta">坦克 · 经验路/打野</div>
+    </a><a class="entity-card" data-kw="米娅 Miya 射手 · 金币路" href="../heroes/miya/">
+    <div class="thumb"><img loading="lazy" src="../heroes/miya.png" alt="米娅"></div>
+    <div class="t">米娅</div>
+    <div class="e">Miya</div>
+    <div class="meta">射手 · 金币路</div>
+    </a><a class="entity-card" data-kw="巴蒙 Balmond 战士 · 打野/经验路" href="../heroes/balmond/">
+    <div class="thumb"><img loading="lazy" src="../heroes/balmond.png" alt="巴蒙"></div>
+    <div class="t">巴蒙</div>
+    <div class="e">Balmond</div>
+    <div class="meta">战士 · 打野/经验路</div>
+    </a><a class="entity-card" data-kw="剑锋 Saber 刺客 · 打野/辅助" href="../heroes/saber/">
+    <div class="thumb"><img loading="lazy" src="../heroes/saber.png" alt="剑锋"></div>
+    <div class="t">剑锋</div>
+    <div class="e">Saber</div>
+    <div class="meta">刺客 · 打野/辅助</div>
+    </a></div>
       <script>
 (function(){
   var input=document.getElementById('q'); if(!input)return;
