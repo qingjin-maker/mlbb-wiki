@@ -1,0 +1,15 @@
+{
+  "name": "决胜巅峰电竞百科",
+  "short_name": "MLBB Wiki",
+  "description": "Mobile Legends: Bang Bang 电竞百科：英雄、选手、战队、赛事、版本、术语一站式结构化资料库",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "lang": "zh-CN",
+  "icons": [
+    {"src":"./icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>英雄 · 决胜巅峰电竞百科</title>
+<meta name="description" content="英雄定位、技能、出装与克制关系">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../icons/icon.svg">
+</head>
+<body>
+<header class="site"><div class="container bar">
+  <a class="logo" href="../index.html"><span class="mark">M</span><span>决胜巅峰电竞百科</span></a>
+  <nav class="main"><a href="../index.html">首页</a><a href="../heroes/" class="cur">英雄</a><a href="../players/">选手</a><a href="../teams/">战队</a><a href="../tournaments/">赛事</a><a href="../patches/">版本</a><a href="../glossary/">术语</a></nav>
+</div></header>
+<main class="container">
+
+      <div class="page-head"><h1>英雄</h1><div class="sub">英雄定位、技能、出装与克制关系</div></div>
+      <input id="q" class="search" type="text" placeholder="搜索英雄…" autocomplete="off">
+      <div class="search-hint" id="hint">共 5 条</div>
+      <div class="entity-grid"><a class="entity-card" data-kw="米娅 Miya 射手 · 难度 简单 强度 T2" href="../heroes/miya/">
+    <div class="t">米娅</div>
+    <div class="e">Miya</div>
+    <div class="meta">射手 · 难度 简单</div>
+    <span class="pill">强度 T2</span></a><a class="entity-card" data-kw="蕾拉 Layla 射手 · 难度 简单 强度 T3" href="../heroes/layla/">
+    <div class="t">蕾拉</div>
+    <div class="e">Layla</div>
+    <div class="meta">射手 · 难度 简单</div>
+    <span class="pill">强度 T3</span></a><a class="entity-card" data-kw="法妮 Fanny 刺客 · 难度 困难 强度 T1" href="../heroes/fanny/">
+    <div class="t">法妮</div>
+    <div class="e">Fanny</div>
+    <div class="meta">刺客 · 难度 困难</div>
+    <span class="pill">强度 T1</span></a><a class="entity-card" data-kw="古斯 Gusion 刺客 · 难度 困难 强度 T1" href="../heroes/gusion/">
+    <div class="t">古斯</div>
+    <div class="e">Gusion</div>
+    <div class="meta">刺客 · 难度 困难</div>
+    <span class="pill">强度 T1</span></a><a class="entity-card" data-kw="蒂格雷尔 Tigreal 坦克 · 难度 简单 强度 T2" href="../heroes/tigreal/">
+    <div class="t">蒂格雷尔</div>
+    <div class="e">Tigreal</div>
+    <div class="meta">坦克 · 难度 简单</div>
+    <span class="pill">强度 T2</span></a></div>
+      <script>
+(function(){
+  var input=document.getElementById('q'); if(!input)return;
+  var cards=Array.prototype.slice.call(document.querySelectorAll('.entity-card,.gloss-card'));
+  function go(){
+    var v=input.value.trim().toLowerCase();
+    cards.forEach(function(c){
+      var kw=(c.getAttribute('data-kw')||'').toLowerCase();
+      c.style.display = (!v || kw.indexOf(v)>-1) ? '' : 'none';
+    });
+    var shown=cards.filter(function(c){return c.style.display!=='none';}).length;
+    var hint=document.getElementById('hint');
+    if(hint) hint.textContent='当前显示 '+shown+' 条';
+  }
+  input.addEventListener('input',go); go();
+})();
+</script>
+</main>
+<footer class="site">
+  <div class="container">
+    决胜巅峰电竞百科 · 对标 Liquidpedia 的结构化电竞知识库 · 内容仅供学习交流<br>
+    数据持续更新中 · 本站为纯静态站点，可“添加到主屏幕”当作 APP 使用
+  </div>
+</footer>
+<script>
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){});});}
+</script>
+</body>
+</html>

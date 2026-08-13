@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>选手 · 决胜巅峰电竞百科</title>
+<meta name="description" content="职业选手档案、生涯与荣誉">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../icons/icon.svg">
+</head>
+<body>
+<header class="site"><div class="container bar">
+  <a class="logo" href="../index.html"><span class="mark">M</span><span>决胜巅峰电竞百科</span></a>
+  <nav class="main"><a href="../index.html">首页</a><a href="../heroes/">英雄</a><a href="../players/" class="cur">选手</a><a href="../teams/">战队</a><a href="../tournaments/">赛事</a><a href="../patches/">版本</a><a href="../glossary/">术语</a></nav>
+</div></header>
+<main class="container">
+
+      <div class="page-head"><h1>选手</h1><div class="sub">职业选手档案、生涯与荣誉</div></div>
+      <input id="q" class="search" type="text" placeholder="搜索选手…" autocomplete="off">
+      <div class="search-hint" id="hint">共 2 条</div>
+      <div class="entity-grid"><a class="entity-card" data-kw="KarlTzy Karl Gabriel Nepomuceno 🇵🇭 菲律宾 · 打野 / Jungle AP Bren" href="../players/karltzy/">
+    <div class="t">KarlTzy</div>
+    <div class="e">Karl Gabriel Nepomuceno</div>
+    <div class="meta">🇵🇭 菲律宾 · 打野 / Jungle</div>
+    <span class="pill">AP Bren</span></a><a class="entity-card" data-kw="FlapTzy David Charles Canon 🇵🇭 菲律宾 · 对抗路 / EXP AP Bren" href="../players/flaptzy/">
+    <div class="t">FlapTzy</div>
+    <div class="e">David Charles Canon</div>
+    <div class="meta">🇵🇭 菲律宾 · 对抗路 / EXP</div>
+    <span class="pill">AP Bren</span></a></div>
+      <script>
+(function(){
+  var input=document.getElementById('q'); if(!input)return;
+  var cards=Array.prototype.slice.call(document.querySelectorAll('.entity-card,.gloss-card'));
+  function go(){
+    var v=input.value.trim().toLowerCase();
+    cards.forEach(function(c){
+      var kw=(c.getAttribute('data-kw')||'').toLowerCase();
+      c.style.display = (!v || kw.indexOf(v)>-1) ? '' : 'none';
+    });
+    var shown=cards.filter(function(c){return c.style.display!=='none';}).length;
+    var hint=document.getElementById('hint');
+    if(hint) hint.textContent='当前显示 '+shown+' 条';
+  }
+  input.addEventListener('input',go); go();
+})();
+</script>
+</main>
+<footer class="site">
+  <div class="container">
+    决胜巅峰电竞百科 · 对标 Liquidpedia 的结构化电竞知识库 · 内容仅供学习交流<br>
+    数据持续更新中 · 本站为纯静态站点，可“添加到主屏幕”当作 APP 使用
+  </div>
+</footer>
+<script>
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){});});}
+</script>
+</body>
+</html>
