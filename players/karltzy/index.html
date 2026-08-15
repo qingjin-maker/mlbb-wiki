@@ -17,11 +17,29 @@
 </head>
 <body>
 <a class="skip-link" href="../../#main">跳到主内容</a>
-<header class="site"><div class="container bar">
-  <a class="logo" href="../../index.html"><span class="mark">M</span><span>决胜巅峰电竞百科</span></a>
-  <nav class="main"><a href="../../index.html">首页</a><a href="../../heroes/">英雄</a><a href="../../teams/">战队</a><a href="../../tournaments/">赛事</a><a href="../../regions/">赛区</a><a href="../../equips/">装备</a><a href="../../emblems/">徽记天赋</a><a href="../../battleskills/">战场技能</a><a href="../../players/" class="cur">选手</a><a href="../../patches/">版本</a><a href="../../glossary/">术语</a></nav>
-</div></header>
-<main id="main" class="container" tabindex="-1">
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sb-head">
+      <a class="logo" href="../../index.html"><span class="mark">M</span><span class="lb">决胜巅峰电竞百科</span></a>
+      <button class="collapse-btn" id="collapseBtn" type="button" aria-label="折叠侧边栏" title="折叠 / 展开侧边栏">‹</button>
+    </div>
+    <nav class="sb-nav" aria-label="主导航"><a class="nav-link" href="../../index.html" title="首页"><span class="ic">🏠</span><span class="lb">首页</span></a><details class="nav-group open" open>
+  <summary class="nav-link"><span class="ic">📚</span><span class="lb">数据库</span><span class="nav-arrow" aria-hidden="true">▾</span></summary>
+  <div class="nav-sub"><a class="nav-link sub" href="../../heroes/" title="英雄"><span class="ic">📚</span><span class="lb">英雄</span></a><a class="nav-link sub" href="../../teams/" title="战队"><span class="ic">📚</span><span class="lb">战队</span></a><a class="nav-link sub cur" href="../../players/" title="选手"><span class="ic">📚</span><span class="lb">选手</span></a><a class="nav-link sub" href="../../regions/" title="赛区"><span class="ic">📚</span><span class="lb">赛区</span></a></div>
+</details><details class="nav-group">
+  <summary class="nav-link"><span class="ic">🏆</span><span class="lb">赛事</span><span class="nav-arrow" aria-hidden="true">▾</span></summary>
+  <div class="nav-sub"><a class="nav-link sub" href="../../tournaments/" title="赛事"><span class="ic">🏆</span><span class="lb">赛事</span></a><a class="nav-link sub" href="../../patches/" title="版本"><span class="ic">🏆</span><span class="lb">版本</span></a></div>
+</details><details class="nav-group">
+  <summary class="nav-link"><span class="ic">⚙️</span><span class="lb">游戏元素</span><span class="nav-arrow" aria-hidden="true">▾</span></summary>
+  <div class="nav-sub"><a class="nav-link sub" href="../../equips/" title="装备"><span class="ic">⚙️</span><span class="lb">装备</span></a><a class="nav-link sub" href="../../emblems/" title="徽记天赋"><span class="ic">⚙️</span><span class="lb">徽记天赋</span></a><a class="nav-link sub" href="../../battleskills/" title="战场技能"><span class="ic">⚙️</span><span class="lb">战场技能</span></a></div>
+</details><details class="nav-group">
+  <summary class="nav-link"><span class="ic">📖</span><span class="lb">入门</span><span class="nav-arrow" aria-hidden="true">▾</span></summary>
+  <div class="nav-sub"><a class="nav-link sub" href="../../glossary/" title="术语"><span class="ic">📖</span><span class="lb">术语</span></a></div>
+</details></nav>
+  </aside>
+  <button class="nav-fab" id="navFab" type="button" aria-label="打开导航" aria-hidden="true">☰</button>
+  <div class="content">
+    <main id="main" class="container " tabindex="-1">
 <div class="breadcrumb"><a href="../../index.html">首页</a> / <a href="../../players/">选手</a> / KarlTzy</div>
     <h1>KarlTzy</h1>
     <div class="tagline">KarlTzy · 打野 / Jungle · AP Bren</div>
@@ -33,13 +51,36 @@
       </div>
       
     </div>
-</main>
-<footer class="site">
-  <div class="container">
-    决胜巅峰电竞百科 · 对标 Liquidpedia 的结构化电竞知识库 · 内容仅供学习交流<br>
-    数据持续更新中 · 本站为纯静态站点，可“添加到主屏幕”当作 APP 使用
+    </main>
+    <footer class="site">
+      <div class="container">
+        决胜巅峰电竞百科 · 对标 Liquidpedia 的结构化电竞知识库 · 内容仅供学习交流<br>
+        数据持续更新中 · 本站为纯静态站点，可“添加到主屏幕”当作 APP 使用
+      </div>
+    </footer>
   </div>
-</footer>
+</div>
+<script>
+(function(){
+  var body=document.body;
+  var btn=document.getElementById('collapseBtn');
+  var fab=document.getElementById('navFab');
+  var KEY='mlbb-nav-collapsed';
+  try{ if(localStorage.getItem(KEY)==='1') body.classList.add('nav-collapsed'); }catch(e){}
+  if(btn){ btn.addEventListener('click',function(){
+    var c=body.classList.toggle('nav-collapsed');
+    try{ localStorage.setItem(KEY, c?'1':'0'); }catch(e){}
+  }); }
+  if(fab){ fab.addEventListener('click',function(e){ e.stopPropagation(); body.classList.toggle('nav-open'); }); }
+  var sb=document.getElementById('sidebar');
+  if(sb){ sb.addEventListener('click',function(e){ if(e.target.closest('a')) body.classList.remove('nav-open'); }); }
+  document.addEventListener('click',function(e){
+    if(body.classList.contains('nav-open') && !e.target.closest('.sidebar') && !e.target.closest('.nav-fab')){
+      body.classList.remove('nav-open');
+    }
+  });
+})();
+</script>
 <script>
 (function(){
   var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
